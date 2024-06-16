@@ -1,4 +1,4 @@
-
-.anchor
 .DS_Store
 target
+test-ledger
+Cargo.lock
