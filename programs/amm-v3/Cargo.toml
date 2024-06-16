@@ -1,0 +1,19 @@
+[package]
+name = "raydium-clmm"
+version = "0.1.0"
+description = "Anchor client and source for Raydium concentrated liquidity AMM"
+edition = "2021"
+keywords = ["solana", "anchor", "raydium"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "raydium_clmm"
+doctest = false
+
+[features]
+default = ["cpi"]
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+
+[dependencies]
+anchor-lang = "0.30.0"
